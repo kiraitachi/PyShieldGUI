@@ -22,7 +22,7 @@ Sadly, almost all VPN clients I tried for Linux have no GUI support :confused:, 
             
 ---
            
-## What can you we with Hotspot Shield client and is ported to KinuxShield
+## What can we do with HotspotShield client and what is ported to KinuxShield
 
 - [ ] Sign in to Hotspot Shield `hotspotshield account signin`
 - [ ] Sign out of Hotspot Shield `hotspotshield account signout`
