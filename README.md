@@ -2,8 +2,8 @@
 
 UNOFFICIAL - KDE GUI for HotspotShield Linux by Kiraitachi
 <p align="center">
-  <img width="460" height="300" src="https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png">
-</p>![Image of Yaktocat](https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png)
+  <img src="https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png">
+</p>
 ---
 
 ## Description and Purpose
