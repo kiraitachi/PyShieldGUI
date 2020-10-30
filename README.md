@@ -1,14 +1,16 @@
 # KinuxShield
 
 UNOFFICIAL - KDE GUI for HotspotShield Linux by Kiraitachi
-![Image of Yaktocat](https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png)
+<p align="center">
+  <img width="460" height="300" src="https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png">
+</p>![Image of Yaktocat](https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png)
 ---
 
 ## Description and Purpose
 
-Long time ago I bought a lifetime license for Hotspotshield. I wont go into details of what VPN services is more realiable (NordVPN, Windscribe, IPVanish, etc) but at the time I wasn't fond of subscriptions based licenses and a lifetime seemed like a really good deal. Back then no Linux support available (mid 2016), recently Hotspotshield was bought by Aura which added Linux support to their client.
+Long time ago I bought a lifetime license for Hotspotshield. I wont go into details of what VPN services is more realiable :yawning_face:(NordVPN, Windscribe, IPVanish, etc) but at the time I wasn't fond of subscriptions based licenses and a lifetime seemed like a really good deal :money_mouth_face:. Back then no Linux support available (mid 2016), recently Hotspotshield was bought by Aura which added Linux support to their client :heart_eyes: :heart_eyes:.
 
-Sadly, almost all VPN clients I tried for Linux have no GUI support, which is fine for most of the cases, but sometimes its just a pain and want a seamless experience. Here is where KinuxShield is born, from the humble hands of a Cybersecurity Analyst that has limited knowledge on developing apps, but is a KDE lover ever since 2008.
+Sadly, almost all VPN clients I tried for Linux have no GUI support :confused:, which is fine for most of the cases, but sometimes its just a pain and want a seamless experience. Here is where KinuxShield is born :boom:, from the humble hands of a Cybersecurity Analyst that has limited knowledge on developing apps, but is a KDE lover ever since 2008 :nerd_face:.
 
 ---
 
