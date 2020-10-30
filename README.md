@@ -1,6 +1,6 @@
 # KinuxShield
 
-UNOFFICIAL - KDE GUI for HotspotShield Linux by Kiraitachi
+###### UNOFFICIAL - KDE GUI for HotspotShield Linux by Kiraitachi
 <p align="center">
   <img src="https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png">
 </p>
