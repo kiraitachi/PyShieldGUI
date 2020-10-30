@@ -1,6 +1,7 @@
 # KinuxShield
-UNOFFICIAL - KDE GUI for HotspotShield Linux by Kiraitachi
 
+UNOFFICIAL - KDE GUI for HotspotShield Linux by Kiraitachi
+![Image of Yaktocat](https://github.com/kiraitachi/KinuxShield/blob/main/KinuxShield.png)
 ---
 
 ## Description and Purpose
@@ -13,8 +14,7 @@ Sadly, almost all VPN clients I tried for Linux have no GUI support, which is fi
 
 ## Requirements are the following:
 
-* KDIALOG installed, on KDE usually comes pre-installed.
-                sudo apt install kdialog
+* KDIALOG installed, on KDE usually comes pre-installed: `sudo apt install kdialog`
 * Hotspotshield Linux Client: https://www.hotspotshield.com/vpn/vpn-for-linux/?af-campaign=linux-banner-click
             
 ---
