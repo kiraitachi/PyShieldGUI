@@ -25,14 +25,15 @@ Sadly, almost all VPN clients I tried for Linux have no GUI support :confused:, 
 ## What can we do with HotspotShield client and what is ported to KinuxShield
 
 - [ ] Sign in to Hotspot Shield `hotspotshield account signin`
-- [ ] Sign out of Hotspot Shield `hotspotshield account signout`
-- [ ] Start the VPN, does not connect it `hotspotshield start`
-- [ ] Stops the VPN in the background, disconnects if connected `hotspotshield stop`
+- [x] Sign out of Hotspot Shield `hotspotshield account signout`
+- [x] Start the VPN, does not connect it `hotspotshield start`
+- [x] Stops the VPN in the background, disconnects if connected `hotspotshield stop`
 - [ ] Connect to a Virtual Location or city `hotspotshield connect [country code]`
-- [ ] Connect to the most recent location `hotspotshield connect`
-- [ ] Quit Hotspot Shield `hotspotshield stop`
+- [x] Connect to the most recent location `hotspotshield connect`
 - [x] View account information and status `hotspotshield account status`
 - [x] Displays the list of all available Virtual locations `hotspotshield locations`
 - [x] Disconnect or change to another Virtual Location `hotspotshield disconnect`
 - [x] Check if the VPN is running `hotspotshield status`
 - [x] Check your public IP `curl ipinfo.io`
+
+Source of commands: https://support.hotspotshield.com/hc/en-us/articles/360041968071-What-are-all-of-the-Hotspot-Shield-commands-on-Linux-
