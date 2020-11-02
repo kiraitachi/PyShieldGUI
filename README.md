@@ -9,7 +9,7 @@
 
 ## Description and Purpose
 
-Long time ago I bought a lifetime license for Hotspotshield. I wont go into details of what VPN services is more realiable :yawning_face:(NordVPN, Windscribe, IPVanish, etc) but at the time I wasn't fond of subscriptions based licenses and a lifetime seemed like a really good deal :money_mouth_face:. Back then no Linux support available (mid 2016), recently Hotspotshield was bought by Aura which added Linux support to their client :heart_eyes: :heart_eyes:.
+Long time ago I bought a lifetime license for Hotspotshield. I wont go into details of what VPN services are more realiable :yawning_face:(NordVPN, Windscribe, IPVanish, etc), but at the time, I wasn't fond of subscriptions based licenses and a lifetime license seemed like a really good deal :money_mouth_face:. Back then no Linux support available (mid 2016), recently Hotspotshield was bought by Aura which added Linux support to their client :heart_eyes: :heart_eyes:.
 
 Sadly, almost all VPN clients I tried for Linux have no GUI support :confused:, which is fine for most of the cases, but sometimes its just a pain and want a seamless experience. Here is where KinuxShield is born :boom:, from the humble hands of a Cybersecurity Analyst that has limited knowledge on developing apps, but is a KDE lover ever since 2008 :nerd_face:.
 
