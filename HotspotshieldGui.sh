@@ -1,13 +1,7 @@
-option=`kdialog --combobox "<h1>Welcome to KinuxShield</h1><h4>KinuxShield is an unofficial KDE GUI for Hotspotshield</h4><center><img src='KinuxShield.png'></center><p>Made by kiraitachi. For any issue: <br>https://github.com/kiraitachi/KinuxShield</p><p>Select an option:</p>" "hotspotshield account signin" "hotspotshield account signout" "hotspotshield start" "hotspotshield stop" "hotspotshield connect" "hotspotshield account status" "VPN Locations" "VPN Client Status" "Disconnect VPN" "What's my public IP?"`
+option=`kdialog --combobox "<h1>Welcome to KinuxShield</h1><h4>KinuxShield is an unofficial KDE GUI for Hotspotshield</h4><center><img src='KinuxShield.png'></center><p>Made by kiraitachi. For any issue: <br>https://github.com/kiraitachi/KinuxShield</p><p>Select an option:</p>" "hotspotshield start" "hotspotshield stop" "hotspotshield connect" "hotspotshield account status" "VPN Locations" "VPN Client Status" "Disconnect VPN" "What's my public IP?"`
 
 answer="$?"
-if [ "$answer" = 0 ] && [ "$option" = "hotspotshield account signin" ]; then
-	kdialog --msgbox "`$option`"
-
-elif [ "$answer" = 0 ] && [ "$option" = "hotspotshield account signout" ]; then
-    kdialog --msgbox "`$option`"
-
-elif [ "$answer" = 0 ] && [ "$option" = "hotspotshield start" ]; then
+if [ "$answer" = 0 ] && [ "$option" = "hotspotshield start" ]; then
     kdialog --msgbox "`$option`"
 
 elif [ "$answer" = 0 ] && [ "$option" = "hotspotshield stop" ]; then
