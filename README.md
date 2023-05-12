@@ -2,7 +2,7 @@
 
 ###### UNOFFICIAL - KDE GUI for HotspotShield Linux by Kiraitachi
 <p align="center">
-  <img src="[https://github.com/kiraitachi/PyShield/blob/main/Pyshield.png]">
+  <img src="https://github.com/kiraitachi/PyShield/blob/main/Pyshield.png">
 </p>
 
 ---
