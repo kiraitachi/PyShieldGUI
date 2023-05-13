@@ -32,6 +32,6 @@ Sadly, almost all VPN clients I tried for Linux have no GUI support :confused:, 
 - [x] Displays the list of all available Virtual locations `hotspotshield locations`
 - [x] Disconnect or change to another Virtual Location `hotspotshield disconnect`
 - [x] Check if the VPN is running `hotspotshield status`
-- [ ] Check your public IP `curl ipinfo.io`
+- [X] Check your public IP `curl ipinfo.io`
 
 Source of commands: https://support.hotspotshield.com/hc/en-us/articles/360041968071-What-are-all-of-the-Hotspot-Shield-commands-on-Linux-
