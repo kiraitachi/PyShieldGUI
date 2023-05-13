@@ -1,4 +1,4 @@
-# KinuxShield
+# PyShieldGUI
 
 ###### UNOFFICIAL - Python GUI for HotspotShield Linux by Kiraitachi
 <p align="center">
