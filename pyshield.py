@@ -12,14 +12,14 @@ def run_command(command):
     dialog.destroy()
 
 # Function to show virtual locations and prompt to connect
-# Function to show virtual locations and prompt to connect
 def show_locations():
     vpn_status_output = subprocess.check_output("hotspotshield status".split())
     vpn_status = vpn_status_output.decode("utf-8")
     if "Connected" in vpn_status:
         # VPN is running, prompt to stop it first
-        dialog = Gtk.MessageDialog(parent=None, flags=0, message_type=Gtk.MessageType.WARNING, buttons=Gtk.ButtonsType.OK_CANCEL, text="VPN is currently running")
-        dialog.format_secondary_text("Do you want to stop the VPN before connecting to a new location?")
+        dialog = Gtk.MessageDialog(parent=None, flags=0, message_type=Gtk.MessageType.WARNING, buttons=Gtk.ButtonsType.OK_CANCEL)
+        dialog.set_title("VPN is currently running")
+        dialog.set_markup("Do you want to stop the VPN before connecting to a new location?")
         response = dialog.run()
         dialog.destroy()
         if response == Gtk.ResponseType.CANCEL:
@@ -27,7 +27,8 @@ def show_locations():
         run_command("hotspotshield stop")
     locations_output = subprocess.check_output("hotspotshield locations".split())
     locations = locations_output.decode("utf-8").splitlines()
-    dialog = Gtk.Dialog(title="Connect to Virtual Location", parent=None, flags=0, buttons=("Connect", Gtk.ResponseType.OK, "Cancel", Gtk.ResponseType.CANCEL))
+    dialog = Gtk.Dialog(title="Connect to Virtual Location", parent=None, flags=0)
+    dialog.add_buttons("Connect", Gtk.ResponseType.OK, "Cancel", Gtk.ResponseType.CANCEL)
     dialog.set_default_size(200, 100)
     dialog.set_border_width(10)
     vbox = dialog.get_content_area()
@@ -45,6 +46,10 @@ def show_locations():
         run_command(f"hotspotshield connect {location}")
     dialog.destroy()
 
+# Function to check public IP
+def check_public_ip():
+    run_command("curl ipinfo.io")
+
 # Create main window
 win = Gtk.Window(title="Hotspot Shield")
 win.set_default_size(300, 250)
@@ -55,6 +60,28 @@ account_status_button.connect("clicked", lambda button: run_command("hotspotshie
 
 vpn_status_button = Gtk.Button(label="VPN Status")
 vpn_status_button.connect("clicked", lambda button: run_command("hotspotshield status"))
+
+check_public_ip_button = Gtk.Button(label="Check PublicIP")
+check_public_ip_button.connect("clicked", lambda button: check_public_ip())
+
+start_button = Gtk.Button(label="Start VPN")
+start_button.connect("clicked", lambda button: run_command("hotspotshield start"))
+
+stop_button = Gtk.Button(label="Stop VPN")
+stop_button.connect("clicked", lambda button: run_command("hotspotshield stop"))
+
+connect_button = Gtk.Button(label="Connect to Locations")
+connect_button.connect("clicked", lambda button: show_locations())
+
+# Create buttons
+account_status_button = Gtk.Button(label="Account Status")
+account_status_button.connect("clicked", lambda button: run_command("hotspotshield account status"))
+
+vpn_status_button = Gtk.Button(label="VPN Status")
+vpn_status_button.connect("clicked", lambda button: run_command("hotspotshield status"))
+
+check_public_ip_button = Gtk.Button(label="Check PublicIP")
+check_public_ip_button.connect("clicked", lambda button: run_command("curl ipinfo.io"))
 
 start_button = Gtk.Button(label="Start VPN")
 start_button.connect("clicked", lambda button: run_command("hotspotshield start"))
@@ -69,6 +96,7 @@ connect_button.connect("clicked", lambda button: show_locations())
 box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
 box.pack_start(account_status_button, True, True, 0)
 box.pack_start(vpn_status_button, True, True, 0)
+box.pack_start(check_public_ip_button, True, True, 0)
 box.pack_start(start_button, True, True, 0)
 box.pack_start(stop_button, True, True, 0)
 box.pack_start(connect_button, True, True, 0)
